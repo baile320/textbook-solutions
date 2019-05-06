@@ -6,3 +6,8 @@ This project was partially inspired by the "Project Crazy Project," (an extinct 
 ## Book List
 ### Introduction to Graph Theory - Richard J. Trudeau
   * Incomplete (first chapter solutions complete)
+
+## Errors, Omissions, Etc.
+These notes are primarily for my own benefit, but if any egregious errors are found please feel free to open an issue or pull request and we can try to get it straightened out. I apologize in advance for any silly mistakes or typos, but I am less likely to be interested in fixing those at this time.
+
+I have omitted problems where I deem fit. That is, I may have judged that typing the problem up would have been too time consuming, or the answers were given in the text, or they were just boring problems, or... (some other excuse).
