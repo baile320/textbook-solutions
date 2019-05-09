@@ -15,6 +15,7 @@
 \maketitle
 
 \begin{enumerate}
+
 	\item[1] Prove the following statements:
 	
 	\begin{enumerate}
@@ -29,6 +30,7 @@
 		\item[b] We proved this in item $a$ because we did not utilize the fact that Figure 63a was $C_5$.
 		\item[c] This follows by the same pigeonhole argument as the previous two items. If we attach $\frac{1}{2}(v - 1)$ edges, we either have adjacent edges already, or we don't. If we don't, then we have connected a single isolated vertex and a final edge to add. Therefore, any connection will create two adjacent edges.
 	\end{enumerate}
+	
 	\item[2] Prove that in Figure 58, graph a) is planar, and graphs b) and c) are non-planar.
 	
 	\textbf{Solution:}
@@ -57,7 +59,32 @@
 				\end{tikzpicture}
 			\item[b] This is a supergraph of $UG$.
 			\item[c] $K_7$ is a supergraph of $K_5$.
-			\end{enumerate}
+		\end{enumerate}
+	\item[3] Find a graph $G$ such that $every$ expansion of $G$ is also a supergraph of $G$.
+	\item[4 - 5] Omitted, answers in book.
+	\item[6] Draw a nonplanar graph whose complement is nonplanar.
+	\item[7] Prove the ``Petersen graph" is nonplanar.
+	\item[8] Omitted for size.
+	\item[9] Prove: if $H$ is an expansion of $G$ then $v_G + e_H = v_H + e_G$.
+	\item[10] Prove: if $H$ and $J$ are expansions of $G$G then $v_H + e_J = V_J + e_H$.
+	\item[11] Find all integers $v$ for which $\overline{C_v}$ is nonplanar. Prove that your answer is correct.
+	\item[12] Use the pigeonhole principle to prove that there are at least two red maples in the United States having the same number of leaves.
+	
+	\textbf{Solution} This appears to be false as written (at least without additional assumptions). Counterexample: It is conceivable that there are only two trees, one with 0 leaves and one with 1 leaf.
+	\item[13] Prove the following statements:
+		\begin{enumerate}
+			\item[a] Except for $UG$ itself, no expansion of $UG$ is also a supergraph of $UG$.
+			\item[b] Except for $K_5$ itself, no expansion of $K_5$ is also a supergraph of $K_5$.
+		\end{enumerate}
+	\item[14] Let $S$ be the set of all expansions of supergraphs of $UG$ or $K_5$, and let T be the set of all supergraphs of expansions of $UG$ or $K_5$. Prove that $T$ is $not$ a subset of $S$ and therefore $S \neq T$, by finding a supergraph of an expansion of $K_5$ that is not also an expansion of a supergraph of $K_5$.
+	\item[15] Isomorphism is ``transitive", that is, if $G \cong H$ and $H \cong J$, then $G \cong J$. This enables us to prove the following theorem.
+	
+	\textbf{Theorem}: If $H$ is planar and $G \cong H$, then $G$ is planar too.
+	
+	Use this fact to devise new proofs that the pairs of graphs in Figures 46, 51, 54, and 55 are not isomorphic.
+	\item[16] Prove that the graphs in Figure 89 are planar.
+	\item[17] Prove that the graphs in Figure 90 are nonplanar.
+	\item[18 - 20] In Figures 91 - 93, decide whether each graph is planar or nonplanar and then prove that your choice is correct.
 \end{enumerate}
 
 \end{document}
