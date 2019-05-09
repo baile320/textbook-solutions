@@ -23,6 +23,12 @@
 		\item[c] If $v$ is an odd number, then every graph with $v$ vertices and $\frac{1}{2}(v + 1)$ edges has at least two adjacent edges.
 	\end{enumerate}
 	
+	\textbf{Solution:}
+	\begin{enumerate}
+		\item[a] This is a straightforward application of the pigeonhole principle. If we add one edge, we connect two vertices. If we add another vertex it will either touch an existing vertex (and we are done) or not. If not, then we now have 4 vertices connected, none of which have adjacent edges, and one isolated vertex. For the final edge, no matter how we attach it, it must be adjacent to at least one other edge.
+		\item[b] We proved this in item $a$ because we did not utilize the fact that Figure 63a was $C_5$.
+		\item[c] This follows by the same pigeonhole argument as the previous two items. If we attach $\frac{1}{2}(v - 1)$ edges, we either have adjacent edges already, or we don't. If we don't, then we have connected a single isolated vertex and a final edge to add. Therefore, any connection will create two adjacent edges.
+	\end{enumerate}
 \end{enumerate}
 
 \end{document}
