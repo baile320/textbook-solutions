@@ -55,10 +55,7 @@
 	
 	\item[6] Prove this partial converse to Euler's formula: If a graph is planar and $v + f - e = 2$, then the graph is connected.
 	
-	\textbf{Solution}: We proceed by induction on $f$. In the case $f = 1$, we have $G = N_1$ which is connected (see problem 4.1). Now, suppose a graph with $n$ faces is planar, has $v + f - e = 2$, and is connected. Given a planar graph $G$ with $n + 1$ faces
-	.....................
-	.....................
-	.....................
+	\textbf{Solution}: Suppose the graph is not connected but is planar. Then we can apply Euler's formula to both pieces and get $v_1 + f_1 - e_1 = 2$ and $v_2 + f_2 - e_2 = 2$. Notice that $v = v_1 + v_2$ and $e = e_1 + e_2$ and $f + 1= f_1 + f_2$ (because we double-counted the infinite face). Therefore, we get $v + f - e = v_1 + f_1 - e_1 + v_2 + f_2 - e_2 + 1 = 4 \implies v + f - e = 3$. But, this is a contradiction by Euler's formula, so the graph must have been connected.
 	
 	\item[7] Let `p' denote the number of components of a graph and prove this generalization of Euler's formula: if a graph is planar, then $v + f - e = 1 + p$.
 	
