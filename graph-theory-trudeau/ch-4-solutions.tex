@@ -24,6 +24,38 @@
 	
 	\item[3] Believe it or not, the graph of Figure 104a is planar. Find its number of faces.
 	
+	\textbf{Solution}: $v = 9$, $e = 20$, so $v + f - e = 2 \implies f = 13$
+	
+	\item[4] Imitate the proof of Corollary 12 to construct a proof that the graph in 104b is nonplanar.
+	
+	\textbf{Solution}: Suppose it is planar. By inspection, the figure is not a supergraph of $K_3$, so by Theorem 12, we have $e \leq 2v - 4$. But, inspecting the graph, we see that $v = 8$ and $e = 16$ which implies $16 \leq 12$, a contradiction. Therefore, it must not be planar.
+	
+	\item[5] Find a polygonal graph G having a face bordering the infinite face which, if removed, results in a subgraph H which is not polygonal.
+	
+	\textbf{Solution}: Removing the face determined by $(2, 3, 5, 4)$ below would leave us with a graph that is not polygonal, since it would be disconnected.
+	
+	\begin{tikzpicture}[shorten >=1pt,auto,node distance=3cm, thick,main node/.style={circle,draw,font=\sffamily\Large\bfseries}]
+			\node[main node] (1) {1};
+			\node[main node] (2) [below left=1cm and 1cm of 1] {2};
+			\node[main node] (3) [below right=1cm and 1cm of 1] {3};
+			\node[main node] (4) [below=1cm of 2] {4};
+			\node[main node] (5) [below=1cm of 3] {5};
+			\node[main node] (6) [below right=1cm and 1cm of 4] {6};
+			\path[every node/.style={font=\sffamily\small}]
+				(1)	edge node [left] {} (2)
+					edge node [left] {} (3)
+                	(2)	edge node [right] {} (3)
+                		edge node [right] {} (1)
+				(3)	edge node [right] {} (5)
+                	(4)	edge node [right] {} (2)
+                		edge node [right] {} (5)
+					edge node [right] {} (6)
+				(5)	edge node [right] {} (6);
+		\end{tikzpicture}
+	
+	\item[6] Prove this partial converse to Euler's formula: If a graph is planar and $v + f - e = 2$, then the graph is connected.
+	
+	\textbf{Solution}: 
 \end{enumerate}
 
 \end{document}
