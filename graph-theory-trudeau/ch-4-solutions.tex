@@ -63,7 +63,12 @@
 	\item[7] Let `p' denote the number of components of a graph and prove this generalization of Euler's formula: if a graph is planar, then $v + f - e = 1 + p$.
 	
 	\textbf{Solution}: We proceed by induction on $p$. We already know that the case $p = 1$ is true because that is just the familiar Euler's formula. Suppose for a graph with $n$ components we have $v + f - e = 1 + n$. Now, given any graph $G$ with $n + 1$ components we can reduce this to a graph $H$ with $n$ components by adding an edge connecting one component to another, which would not change the number of vertices or faces. Therefore, we have $v_H + f_H - e_H = 1 + (n + 1) \iff v_H + f_H - (e_G + 1) = 1 + (n + 1) \iff v_G + f_G - e_G = 1 + n$, which completes the inductive step to complete the proof.
+	
+	\textbf{Alternative Solution}: We could instead treat each component as its own graph and apply Euler's formula to each piece. Suppose we have $n$ components. Then we have $\sum_{i}{v_i} + \sum_{i}{f_i} + \sum_{i}{e_i} = 2$. Summing over all $n$ components we have $V + \sum_{i}{f_i} - E = 2n$ but doing it this way we accidentally counted the infinite face $n$ times in total, so we should have $V + \sum_{i}{f_i} - E - (n - 1) = 2n \implies V + F - E = 1 + n$
 
+	\item[8] Use corollary 13 to show the graph in Figure 106 is nonplanar:
+	
+	\textbf{Solution}: Every vertex has degree 6, so by corollary 13, it cannot be planar.
 \end{enumerate}
 
 \end{document}
