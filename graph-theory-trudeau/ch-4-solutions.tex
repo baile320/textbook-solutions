@@ -4,6 +4,7 @@
 \usepackage{hyperref}
 \usetikzlibrary{positioning}
 \newcommand\abs[1]{\left|#1\right|}
+\newcommand\floor[1]{\lfloor#1\rfloor}
 
 \begin{document}
 
@@ -66,6 +67,43 @@
 	\item[8] Use corollary 13 to show the graph in Figure 106 is nonplanar:
 	
 	\textbf{Solution}: Every vertex has degree 6, so by corollary 13, it cannot be planar.
+	
+	\item[9] Omitted, see the answer in the book.
+	
+	\item[10] Prove: Every planar graph with $v \geq 4$ has at least $\it{four}$ vertices of degree $\leq 5$.
+	
+	\textbf{Solution}: Suppose not. And suppose $G$ is ``almost planar" in the sense that if we add a single new edge between any two nodes then the graph will be nonplanar (Note: we can always derive such a graph from planar graphs via connecting successive edges). Now, there can be no vertices with degrees 0 or 1 (if there were, we should connect them to another vertex in the face they are in). And, there are no vertices of degree 2. If there was a vertex of degree 2, then there would be a face of length 4 or more where we could connect it via an edge. So, every vertex has degree $\geq 3$. Suppose $G$ has at most 3 vertices of degree $< 5$. Then $2e \geq 6(v - 3) + 3 \cdot 3 = 6v - 9$. But, we know $e \leq 3v - 6 \implies 2e \leq 6v - 12$. From those two inequalities we derive a contradiction.
+	
+	\item[11] Find the connectivity $c$ of each graph in Figure 91, 92, 93.
+	
+	\textbf{Solution}: Respectively: $c = 2, 2, 3, 1, 3, 2$
+	
+	\item[12] By Exercise 11 of Chapter 2, $2e/v$ is the average of the degrees of a graph. Prove that if a graph has connectivity $c$ then $c \leq 2e/v$.
+	
+	\textbf{Solution}: Suppose $c > 2e/v$.
+	\begin{align}
+		c > 2e/v 
+		&\iff cv > 2e = \sum_{v} \mathrm{deg}(v) \\
+		&\iff \sum_{v} c > \sum_{v} \mathrm{deg}(v)\\
+		&\iff c > \mathrm{deg}(v)
+	\end{align}
+	for some $v$.
+	
+	But then if we remove the $\mathrm{deg}(v)$ vertices connected to $v$, $G$ will be disconnected because $v$ is isolated. That means that $c$ was not the connection because it was not the minimum such value to disconnect the graph $G$.
+	
+	\item[13] Use the previous exercise to show that there is no graph with $e = 7$ and $c = 3$, and none with $e = 11$ and $c = 4$.
+	
+	\textbf{Solution}:
+		\begin{enumerate}
+			\item[a] Since $e = 7$, we must have $v \geq 5$ (using the fact that $v_{K_4} = 6$). Then, $c \leq 2e/v \implies 3 \leq \floor{14/5} = 2$, a contradiction.
+			\item[b] Since $e = 11$, we must have $v \geq 6$ (using the fact that $v_{K_5} = 10$). Then, $c \leq 2e/v \implies 4 \leq \floor{22/6} = 3$, a contradiction.
+		\end{enumerate}
+	
+	\item[14] In a planar graph a bridge necessarily borders on only one face, and an edge bordering on only one face is necessarily a bridge. Thus bridges are the things that prevent planar connected graphs from being polygonal. Use this fact to prove that if a planar and connected graph $G$ has the property that the boundary of every face is a cyclic graph, then $G$ is polygonal. Then show that the converse statement is false by finding a polygonal graph having a face whose boundary is not a cyclic graph.
+	
+	\textbf{Solution}:
+	
+	Counterexample: From problem 1, $N_1$ is polygonal. But, cyclic graphs are only defined when $v \geq 3$, so $N_1$ is not cyclic.
 \end{enumerate}
 
 \end{document}
