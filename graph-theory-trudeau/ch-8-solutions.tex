@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{icomma}
+\usepackage{hyperref}
+\usetikzlibrary{positioning}
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\floor[1]{\lfloor#1\rfloor}
+
+\begin{document}
+
+	\title{%
+  	Introduction to Graph Theory \\
+  		\large by Richard Trudeau \\
+   		Ch. 8 Solutions}
+   		\author{Tyler Bailey}
+	\maketitle
+
+	\begin{enumerate}
+		\item[1] Use Exercise 11 of Chapter 2 to prove that every graph has an even number of odd vertices.
+		\item[2] Find all integers $v \geq 2$ for which
+		\begin{enumerate}
+			\item[a)] $K_v$ has an open euler walk.
+			\item[b)] $K_v$ has an closed euler walk.
+			\item[c)] $K_v$ has an open hamilton walk.
+			\item[d)] $K_v$ has an closed hamilton walk.
+		\end{enumerate}
+		\item[3] Explain why each drawing in Figure 155 are either bad or good puzzles.
+		\item[4] Let $C$ be a graph with $v = 64$, its vertices corresponding to the squares of a chess board. Let two vertices of $C$ be joined by an edge whenever a knight can go from one of the corresponding squares to the other in one move. Does $C$ have an euler walk? (You don't have to draw $C$ to answer.)
+		\item[5] Prove that $C$ from the previous exercise has a closed hamilton walk. Such a walk is called a ``knight's tour" by puzzle enthusiasts.
+	\end{enumerate}
+\end{document}
