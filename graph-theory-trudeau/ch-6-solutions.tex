@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{amsmath}
 \usepackage{tikz}
+\usepackage{icomma}
 \usepackage{hyperref}
 \usetikzlibrary{positioning}
 \newcommand\abs[1]{\left|#1\right|}
@@ -17,6 +18,50 @@
 
 	\begin{enumerate}
 
-		\item[1]
+		\item[1] Find X (chromatic number) for each of the following graphs: $C_v$, $W_v$, $UG$, Octahedron, dodecahedron, icosahedron.
+		
+		\textbf{Solution}: 
+		$\\
+		X_{C_v} = 2 \\ 		
+		X_{W_v} = 3 \\
+		X_{UG} = 2 \\
+		X_{Oct} = 3 \\
+		X_{Dod} = 3 \\
+		X_{Ico} = 4 \\
+		$
+		
+		\item[2] Find X for each of the graphs in Figure 126.
+		
+		\textbf{Solution}:
+			\begin{enumerate}
+				\item[a)] 3
+				\item[b)] 4
+				\item[c)] 3
+			\end{enumerate}
+			
+		\item[3] Prove the ``Two Color Theorem": the set of all graphs with $X = 2$ is equal to the set of all graphs having at least one edge and no odd cyclic subgraphs.
+		
+		\textbf{Solution}: A solution is in the book.
+		
+		\item[4] $K_3$ has $X = 3$, so every supergraph of $K_3$ has $X \geq 3$. On the other hand, $C_5$ is a graph with $X = 3$ that is not a supergraph of $K_3$. Find a graph with $X = 4$ that is not a supergraph of $K_3$.
 
+		\textbf{Solution}: The Grötzsch graph is one such example.
+		
+		\item[5] If a graph $G$ has chromatic number $X$ and $\overline{G}$ has chromatic number $\overline{X}$, prove that $X\overline{X} \geq v$. Then use the fact that $(1/2)(m + n) \geq \sqrt{mn}$ whenever integers $m, n > 0$ to prove that $X + \overline{X} \geq 2\sqrt{v}$.
+		
+		\textbf{Solution}: Suppose $G$ has $v$ vertices, and that $G$ and $\overline{G}$ have chromatics numbers $X$ and $\overline{X}$. Given the colorings of $G$ and $\overline{G}$ we can color $K_v$ using the ordered pairs $(X_{v_i}, \overline{X_{v_i}})$. Since $X_{K_v} = v$, we must have $X_{K_v} = v \leq X\overline{X}$.
+		
+		The next part of the problem follows from $\sqrt{X\overline{X}} \geq \sqrt{v}$ and $(1/2)(X + \overline{X}) \geq \sqrt{X\overline{X}} \geq \sqrt{v}$.
+		
+		\item[6] Find a graph for which $X\overline{X} = v$ and for which a $X + \overline{X} = 2\sqrt{v}$. Could a single graph satisfy both equations?
+		
+		\textbf{Solution}:
+		$\\
+		K_3 = 3, \smallskip \overline{K_3} = 1 \\
+		C_4 = 2, \overline{C_4} = 2
+		$
+		
+		Yes, it is possible, take e.g. our second example: $v = 4$, and $X = \overline{X} = 2$.
+		
+	\end{enumerate}
 \end{document}
