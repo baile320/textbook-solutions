@@ -18,15 +18,67 @@
 
 	\begin{enumerate}
 		\item[1] Use Exercise 11 of Chapter 2 to prove that every graph has an even number of odd vertices.
+
+		\textbf{Solution}: Exercise 11 says that the sum of degrees of vertices in a graph is equal to $2e$. Since this number is always even, there is no possibility of hanging a graph with an odd number of odd vertices. 
+		
 		\item[2] Find all integers $v \geq 2$ for which
 		\begin{enumerate}
 			\item[a)] $K_v$ has an open euler walk.
-			\item[b)] $K_v$ has an closed euler walk.
+
+			\textbf{Solution}: $K_2$ is the only complete graph with only 2 vertices where $\mathrm{deg}(v)$ is odd.
+							
+			\item[b)] $K_v$ has an closed euler walk for $v \geq 3$.
+			
+			\textbf{Solution}: $K_v$ where $v \geq 3$ and $v$ is odd.
+			
 			\item[c)] $K_v$ has an open hamilton walk.
+			
+			\textbf{Solution}: All $v \geq 3$.
+			
 			\item[d)] $K_v$ has an closed hamilton walk.
+			
+			\textbf{Solution}: All $v \geq 3$.
 		\end{enumerate}
+		
 		\item[3] Explain why each drawing in Figure 155 are either bad or good puzzles.
+		\begin{enumerate}
+			\item[a)] \textbf{Solution}: Bad (insoluble). There are 4 vertices with odd degree, so no possible euler walks.
+			\item[b)] \textbf{Solution}: Bad (boring). Every vertex has even degree, so there is always a closed euler walk.
+			\item[c)] \textbf{Solution}: Good. There are two vertices with odd degree, so there are two possible euler walks (starting from the odd vertices).
+		\end{enumerate}
+		
 		\item[4] Let $C$ be a graph with $v = 64$, its vertices corresponding to the squares of a chess board. Let two vertices of $C$ be joined by an edge whenever a knight can go from one of the corresponding squares to the other in one move. Does $C$ have an euler walk? (You don't have to draw $C$ to answer.)
+		
+		\textbf{Solution}: No. For example, if the knight is on $A2$, $A7$, $H2$, $H7$ the vertices have odd degree, so there are more than 2 vertices with odd degree.
+		
 		\item[5] Prove that $C$ from the previous exercise has a closed hamilton walk. Such a walk is called a ``knight's tour" by puzzle enthusiasts.
+		
+		\textbf{Solution}: Omitted, try drawing one.
+		
+		\item[6] Figure 157 depicts a system of bridges and land areas. Can you take a walk and cross each bridge exactly once? If so, where do you start and finish? Blow up the bridge from $H$ to $I$ and answer the same two questions.
+		
+		\textbf{Solution}: Yes, there are exactly two vertices with odd degree: $F = 5$, $I = 3$, which are the vertices we would start and end at.
+		
+		If we blow up bridge $HI$, we can still have a walk because there are still exactly two vertices with odd degree: $H = 3$, $F = 5$.
+		
+		\item[7] For each integer $v \geq 2$ find a graph with $v$ vertices in which the sum of the degrees of every pair of vertices is at least $v - 1$, but which has no closed hamilton walk. Of course the graph will have an open hamilton walk.
+		
+		\textbf{Solution}: Take $K_v$ with one of the vertices connected to a vertex of degree one. The sum of degree of any two vertices is either $v - 1$ or $2(v - 2)$. In either case, the assumption is satisfied. There is no hamilton walk, though, because we can always enter the vertex with degree 1 but we can never leave it (or if we start there we can never return).
+		
+		\item[8] Show that ever path graph has an open Hamilton walk. Then show that every wheel graph has a closed hamilton walk.
+		
+		\textbf{Solution}: There's really nothing to show here. For $P_v$, start at one vertex of degree one and continue to the final one. For $W_v$, start at any vertex on the rim, move into the spoke vertex, back out to the rim, and then continue around the rim.
+		
+		\item[9] Satisfy yourself that every graph with $v$ vertices and a closed hamilton walk is a supergraph of the cyclic graph $C_v$. Then use this fact to prove that if a graph has a closed hamilton walk then its connectivity $c$ is at least 2.
+		
+		\textbf{Solution}: A supergraph's connectivity is always $\geq c$ where $c$ is the connectivity of the subgraph. The connectivity of $C_v$ is 2. The result follows.
+		
+		\item[10] There are $v$ guests to be seated around a single round table. Each guest is acquainted with at least $\{v/2\}$ others. Prove that they can be seated in such a way that each guest is between two acquaintances.
+		
+		\textbf{Solution}: This is equivalent to a closed hamilton walk. Since every person has $\{v/2\}$ acquaintances, any pair of people has degree $\{v/2\} + \{v/2\} \geq v$, so by Theorem 33, there is such a walk.
+		
+		\item[11] Prove: if $n \geq 2$ and $G$ is connected with $2n$ odd vertices then $G$ has $n$ open walks which, together, use every edge of $G$ exactly once.
+		
+		\textbf{Solution}: Choose open walks without repeating any of the vertex choices. E.g. if vertices $(1, 2, 3, 4)$ have odd vertices, choose $(1, 4)$ and $(2, 3)$, for example.
 	\end{enumerate}
 \end{document}
