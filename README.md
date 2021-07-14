@@ -1,7 +1,9 @@
 # Introduction
 These are the typed up solutions to textbooks I have worked through.
-I am using it primarily to help me learn LaTeX / TikZ / related tools and to increase my accountability to do some math.
-This project was partially inspired by the "Project Crazy Project," (an extinct project) where a heroic student was trying to amass a complete set of solutions to "Abstract Algebra" by Dummit & Foote. 
+
+I am using it primarily to help me learn LaTeX / TikZ / other tools and to increase my accountability to do some math & computer science/programming.
+
+This project was partially inspired by the "Project Crazy Project," (an extinct project) where a heroic student was trying to amass a complete set of solutions to "Abstract Algebra" by Dummit & Foote.
 
 ## Book List
 ### Introduction to Graph Theory - Richard J. Trudeau
